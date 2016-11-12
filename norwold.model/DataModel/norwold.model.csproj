@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45625212-5BAD-49FE-B2F4-F1BB071FF5D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DataModel</RootNamespace>
+    <AssemblyName>DataModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>False</ConsolePause>
+    <Commandlineparameters>-debug -trace</Commandlineparameters>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="libCampaign\campConst.cs" />
+    <Compile Include="libData\maps\sysBaseCombatStatMap.cs" />
+    <Compile Include="libData\maps\sysBaseRuleSetMap.cs" />
+    <Compile Include="libData\sysTree.cs" />
+    <Compile Include="libData\intCSVSerialise.cs" />
+    <Compile Include="libCampaign\maps\campAdventureMap.cs" />
+    <Compile Include="libCampaign\maps\campCharCampaignMap.cs" />
+    <Compile Include="libCampaign\maps\campFactionMap.cs" />
+    <Compile Include="libCampaign\maps\campHexMap.cs" />
+    <Compile Include="libCampaign\maps\campMileStoneMap.cs" />
+    <Compile Include="libCampaign\maps\campXPSpentMap.cs" />
+    <Compile Include="libCampaign\maps\campXPGainedMap.cs" />
+    <Compile Include="libData\maps\sysLanguageMap.cs" />
+    <Compile Include="libData\maps\sysMilestoneTypeMap.cs" />
+    <Compile Include="libData\maps\sysFactionRankingMap.cs" />
+    <Compile Include="libData\sysBaseCombatStat.cs" />
+    <Compile Include="libData\sysLanguage.cs" />
+    <Compile Include="libData\sysBaseRuleset.cs" />
+    <Compile Include="libHosting\hostConstants.cs" />
+    <Compile Include="libHosting\hostDevelopment.cs" />
+    <Compile Include="libHosting\maps\hostDevelopmentMap.cs" />
+    <Compile Include="libMapping\interfaces\IfaceMapDraw.cs" />
+    <Compile Include="libMapping\maps\mapTileTypeMap.cs" />
+    <Compile Include="libMapping\maps\mapTreeMap.cs" />
+    <Compile Include="libMapping\maps\UserTypeBitMap.cs" />
+    <Compile Include="libMapping\maps\UserTypeColor.cs" />
+    <Compile Include="libMapping\maps\mapPOITypeMap.cs" />
+    <Compile Include="libMapping\maps\mapTerrainTypeMap.cs" />
+    <Compile Include="libData\maps\sysBaseDurationTypeMap.cs" />
+    <Compile Include="libData\maps\sysAOETypeMap.cs" />
+    <Compile Include="libData\maps\sysDamageRollMap.cs" />
+    <Compile Include="libData\maps\sysBaseDamageTypeMap.cs" />
+    <Compile Include="libData\maps\sysBaseAlignmentMap.cs" />
+    <Compile Include="libData\maps\sysDevelopmenMap.cs" />
+    <Compile Include="libData\maps\sysItemTypeMap.cs" />
+    <Compile Include="libData\maps\sysStatisticStackingTypeMap.cs" />
+    <Compile Include="libData\maps\sysBaseStatisticMap.cs" />
+    <Compile Include="libCampaign\maps\campTreeMap.cs" />
+    <Compile Include="libData\maps\sysTreeMap.cs" />
+    <Compile Include="libCampaign\campAdventure.cs" />
+    <Compile Include="libCampaign\campCharCampaign.cs" />
+    <Compile Include="libHosting\hostCharStat.cs" />
+    <Compile Include="libData\nwTerrainMap.cs" />
+    <Compile Include="libData\sysMilestoneType.cs" />
+    <Compile Include="libData\sysFactionRanking.cs" />
+    <Compile Include="libCampaign\campHex.cs" />
+    <Compile Include="libData\nwItem.cs" />
+    <Compile Include="libData\maps\nwItemMap.cs" />
+    <Compile Include="libHosting\maps\hostCharStatMap.cs" />
+    <Compile Include="libCampaign\campFaction.cs" />
+    <Compile Include="libCampaign\campXPGained.cs" />
+    <Compile Include="libCampaign\campXPSpent.cs" />
+    <Compile Include="libCampaign\campMilestone.cs" />
+    <Compile Include="libMapping\mapTerrainMapHeader.cs" />
+    <Compile Include="libMapping\mapPOIType.cs" />
+    <Compile Include="libMapping\mapDataTypeDraw.cs" />
+    <Compile Include="libMapping\mapTileType.cs" />
+    <Compile Include="libMapping\mapTree.cs" />
+    <Compile Include="libMapping\mapTerrainFiler.cs" />
+    <Compile Include="libMapping\mapTileSetManager.cs" />
+    <Compile Include="libMapping\mapConst.cs" />
+    <Compile Include="_carpark\sysTerrainMapType.cs" />
+    <Compile Include="libData\sysBaseDurationType.cs" />
+    <Compile Include="libData\sysAOEType.cs" />
+    <Compile Include="libData\sysDamageRoll.cs" />
+    <Compile Include="libData\sysBaseDamageType.cs" />
+    <Compile Include="libData\sysBaseAlignment.cs" />
+    <Compile Include="libDB\nwdbConst.cs" />
+    <Compile Include="libData\sysDevelopment.cs" />
+    <Compile Include="libData\sysItemType.cs" />
+    <Compile Include="libData\sysStatisticStackingType.cs" />
+    <Compile Include="libData\sysBaseStatistic.cs" />
+    <Compile Include="libHosting\hostChar.cs" />
+    <Compile Include="libHosting\maps\hostCharMap.cs" />
+    <Compile Include="libDB\nwdbRepository.cs" />
+    <Compile Include="libDB\nwdbDataType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="libCampaign\campTree.cs" />
+    <Compile Include="libMapping\mapTerrainType.cs" />
+    <Compile Include="libDB\nwdbTree.cs" />
+    <Compile Include="libHosting\hostEmail.cs" />
+    <Compile Include="libHosting\hostFacebook.cs" />
+    <Compile Include="libCampaign\campCampaign.cs" />
+    <Compile Include="libHosting\hostUserEvent.cs" />
+    <Compile Include="libHosting\hostUser.cs" />
+    <Compile Include="libHosting\hostUserType.cs" />
+    <Compile Include="libHosting\maps\hostUserEventMap.cs" />
+    <Compile Include="libHosting\maps\hostUserMap.cs" />
+    <Compile Include="libHosting\maps\hostUserTypeMap.cs" />
+    <Compile Include="libCampaign\maps\campCampaignMap.cs" />
+    <Compile Include="nwdbTest.cs" />
+    <Compile Include="libDB\nwdbConnection.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Brandy.Grapes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Brandy.Grapes.1.0.4\lib\net40\Brandy.Grapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Brandy.Grapes.FluentNHibernate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Brandy.Grapes.FluentNHibernate.1.1.0\lib\net40\Brandy.Grapes.FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Brandy.Grapes.NHibernate, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Brandy.Grapes.NHibernate.1.1.0\lib\net40\Brandy.Grapes.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Facebook.7.0.6\lib\net40-client\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.4.0.1.4000\lib\net40\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.2.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_badlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_brokenlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_cactus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_cactus_heavy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_cultivated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_dead_forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_dead_forest_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_dead_forest_mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_dead_forest_mountains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_dead_grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_dead_wetlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_desert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_desert_coastal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_desert_dunes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_desert_rocky.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_evergreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_evergreen_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_evergreen_mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_evergreen_mountains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_evergreen_wetlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_evergreen_wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_forest_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_forest_mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_forest_mountains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_forest_wetlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_forest_wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_fungal_forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_fungal_wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_grass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_grassland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_grassland_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_grassland_poor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_grazing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_hill_dry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_ice_desert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_ice_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_ice_mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_jungle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_jungle_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_jungle_mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_jungle_mountains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_jungle_wetlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_jungle_wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_lava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_marsh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mixed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mixed_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mixed_wood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_moss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mountain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mountain_snowy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mountains.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mountains_snowy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_mud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_savanna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_shrubland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_shrubland_hill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_swamo_moor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_swamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_swamp_dense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_underdark_brokenlands.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_underdark_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_underdark_solidrock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_volcano_active.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_volcano_dormant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_water_ocean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_water_reef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_water_river.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_water_sea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terrain_water_shoal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openworld.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hexo_181.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_battle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_mine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_village.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_port.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_town.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_tower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_keep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_camp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_warcamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_tents.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_idol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_town_ruins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_village_ruins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_cave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_lair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_oasis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_obelisk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_henge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_pyramid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_windmill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_citadel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_bridge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_temple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_fleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_graveyard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_tombstone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_crossbones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_fish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poi_shrine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="libDB\interfaces\" />
+  </ItemGroup>
+</Project>

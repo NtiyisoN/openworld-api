@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Campaign">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!LongName.Value, "ds_Campaign")</Value>
+                <Style>
+                  <FontFamily>Baldur</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Campaign</rd:DefaultName>
+        <Top>1.04987cm</Top>
+        <Left>0.92286cm</Left>
+        <Height>0.6cm</Height>
+        <Width>10.52217cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Date">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=FormatDateTime(First(Fields!Date.Value, "ds_Adventure"),DateFormat.ShortDate)</Value>
+                <Style>
+                  <FontFamily>Baldur</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Date</rd:DefaultName>
+        <Top>1.04987cm</Top>
+        <Left>11.9507cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Description">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Description.Value, "ds_Adventure")</Value>
+                <Style>
+                  <FontFamily>Baldur</FontFamily>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Description</rd:DefaultName>
+        <Top>2.72203cm</Top>
+        <Left>1.00753cm</Left>
+        <Height>1.53133cm</Height>
+        <Width>13.46433cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="ReportName">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Globals!ReportName</Value>
+                <Style>
+                  <FontFamily>Baldur</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>ReportName</rd:DefaultName>
+        <Top>0.28787cm</Top>
+        <Left>0.9017cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.4685cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="LongName">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!LongName.Value, "ds_Adventure")</Value>
+                <Style>
+                  <FontFamily>Baldur</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>LongName</rd:DefaultName>
+        <Top>1.7907cm</Top>
+        <Left>0.88053cm</Left>
+        <Height>0.6cm</Height>
+        <Width>13.59133cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Image Name="Image1">
+        <Source>Embedded</Source>
+        <Value>openworld</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>1.04987cm</Top>
+        <Left>16.69203cm</Left>
+        <Height>2.10283cm</Height>
+        <Width>7.7865cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>8.97227cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.70978cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.78228cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>13.0335cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Character</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox4">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Gold</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox4</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox6">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Approved?</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox6</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox8">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>XP</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Player Description</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.6cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="CharName">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CharName.Value</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CharName</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Gold">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Gold.Value</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Gold</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="GMApproved">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!GMApproved.Value</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>GMApproved</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="XP">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!XP.Value</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>XP</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="player_description">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!player_description.Value</Value>
+                              <Style>
+                                <FontFamily>Baldur</FontFamily>
+                                <FontSize>12pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>player_description</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>SQLconn_nwRun</DataSetName>
+        <Top>5.43137cm</Top>
+        <Left>1.00753cm</Left>
+        <Height>1.2cm</Height>
+        <Width>28.99783cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+      <Textbox Name="ReportName2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Experience and Gold:</Value>
+                <Style>
+                  <FontFamily>Baldur</FontFamily>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>ReportName</rd:DefaultName>
+        <Top>4.42975cm</Top>
+        <Left>1.00753cm</Left>
+        <Height>0.6cm</Height>
+        <Width>4.4685cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Line Name="Line1">
+        <Top>5.1562cm</Top>
+        <Left>1.00753cm</Left>
+        <Height>0cm</Height>
+        <Width>23.471cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+            <Width>4pt</Width>
+          </Border>
+        </Style>
+      </Line>
+      <Line Name="Line2">
+        <Top>6.80776cm</Top>
+        <Left>1.00753cm</Left>
+        <Height>0cm</Height>
+        <Width>23.471cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+            <Width>4pt</Width>
+          </Border>
+        </Style>
+      </Line>
+    </ReportItems>
+    <Height>4.93879in</Height>
+    <Style>
+      <Border>
+        <Style>Solid</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>11.81313in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="norwoldmodel">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>fb3d2d4d-1bf5-47d2-9a40-e385089d54dc</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="norwoldmodel1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>4af458d7-d269-4024-a665-1c06c3121e62</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="norwoldmodel2">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>2b7d73f8-2074-41a2-bb5f-33a00772c1cc</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="DataModellibHosting">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>aa1cc743-5c5f-4a98-b7c3-bcf5a9a14706</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="norwoldmodel3">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>2ae5c3de-0059-4999-a251-062febb19e3d</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="norwoldmodel4">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>f2859e92-9265-4bda-a52e-fa488073029d</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="ID_norwold_runDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>c1ea3c98-5c12-4135-8ef9-292defc1b252</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="ds_Adventure">
+      <Query>
+        <DataSourceName>norwoldmodel</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Campaign">
+          <DataField>Campaign</DataField>
+          <rd:TypeName>DataModel.libHosting.hostCampaign</rd:TypeName>
+        </Field>
+        <Field Name="Date">
+          <DataField>Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LongName">
+          <DataField>LongName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>norwold.model</rd:DataSetName>
+        <rd:TableName>nwAdventure</rd:TableName>
+        <rd:ObjectDataSourceType>norwold.model.nwAdventure, DataModel, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="ds_AdventureRewards">
+      <Query>
+        <DataSourceName>norwoldmodel2</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Adventure">
+          <DataField>Adventure</DataField>
+          <rd:TypeName>norwold.model.nwAdventure</rd:TypeName>
+        </Field>
+        <Field Name="Character">
+          <DataField>Character</DataField>
+          <rd:TypeName>norwold.model.hostChar</rd:TypeName>
+        </Field>
+        <Field Name="GMApproved">
+          <DataField>GMApproved</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Gold">
+          <DataField>Gold</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LongName">
+          <DataField>LongName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PlayerDescription">
+          <DataField>PlayerDescription</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="XP">
+          <DataField>XP</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>norwold.model</rd:DataSetName>
+        <rd:TableName>nwAdventure</rd:TableName>
+        <rd:ObjectDataSourceSelectMethod>Rewards</rd:ObjectDataSourceSelectMethod>
+        <rd:ObjectDataSourceType>norwold.model.nwAdventure, DataModel, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="ds_Campaign">
+      <Query>
+        <DataSourceName>DataModellibHosting</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DateFinished">
+          <DataField>DateFinished</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DateStarted">
+          <DataField>DateStarted</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Email">
+          <DataField>Email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GM">
+          <DataField>GM</DataField>
+          <rd:TypeName>DataModel.libHosting.hostUser</rd:TypeName>
+        </Field>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LongName">
+          <DataField>LongName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DataModel.libHosting</rd:DataSetName>
+        <rd:TableName>hostCampaign</rd:TableName>
+        <rd:ObjectDataSourceType>DataModel.libHosting.hostCampaign, DataModel, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="ds_char">
+      <Query>
+        <DataSourceName>norwoldmodel3</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Alignment">
+          <DataField>Alignment</DataField>
+          <rd:TypeName>norwold.model.sysAlignment</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id_table_domain">
+          <DataField>id_table_domain</DataField>
+          <rd:TypeName>System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]</rd:TypeName>
+        </Field>
+        <Field Name="isNPC">
+          <DataField>isNPC</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Logon">
+          <DataField>Logon</DataField>
+          <rd:TypeName>DataModel.libHosting.hostUser</rd:TypeName>
+        </Field>
+        <Field Name="LongName">
+          <DataField>LongName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>norwold.model</rd:DataSetName>
+        <rd:TableName>hostChar</rd:TableName>
+        <rd:ObjectDataSourceType>norwold.model.hostChar, DataModel, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="SQLconn_nwRun">
+      <Query>
+        <DataSourceName>ID_norwold_runDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="XP">
+          <DataField>XP</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Gold">
+          <DataField>Gold</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="GMApproved">
+          <DataField>GMApproved</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CharName">
+          <DataField>CharName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="player_description">
+          <DataField>player_description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LongName">
+          <DataField>LongName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nwAdventure_id">
+          <DataField>nwAdventure_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>_norwold_runDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\Steve\Dropbox\games\norwold\code\dev-db\DataModel\norwold.forms\_norwold_runDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>vwXPGained</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>vwXPGainedTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code>Public Function AsString(o as Object)
+	return o.ToString()
+End Function</Code>
+  <EmbeddedImages>
+    <EmbeddedImage Name="openworld">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>f0ef5b58-539a-4eee-bdd3-e3509f00b436</rd:ReportID>
+</Report>

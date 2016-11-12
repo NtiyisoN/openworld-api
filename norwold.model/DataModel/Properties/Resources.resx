@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="terrain_badlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_badlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_brokenlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_brokenlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_cactus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_cactus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_cactus_heavy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_cactus_heavy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_cultivated" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_cultivated.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_dead_forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_dead_forest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_dead_forest_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_dead_forest_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_dead_forest_mountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_dead_forest_mountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_dead_forest_mountains" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_dead_forest_mountains.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_dead_grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_dead_grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_dead_wetlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_dead_wetlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_desert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_desert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_desert_coastal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_desert_coastal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_desert_dunes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_desert_dunes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_desert_rocky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_desert_rocky.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_evergreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_evergreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_evergreen_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_evergreen_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_evergreen_mountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_evergreen_mountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_evergreen_mountains" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_evergreen_mountains.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_evergreen_wetlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_evergreen_wetlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_evergreen_wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_evergreen_wood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_forest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_forest_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_forest_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_forest_mountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_forest_mountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_forest_mountains" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_forest_mountains.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_forest_wetlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_forest_wetlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_forest_wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_forest_wood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_fungal_forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_fungal_forest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_fungal_wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_fungal_wood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_grassland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_grassland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_grassland_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_grassland_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_grassland_poor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_grassland_poor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_grazing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_grazing.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_hill_dry1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_hill_dry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_ice_desert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_ice_desert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_ice_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_ice_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_ice_mountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_ice_mountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_jungle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_jungle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_jungle_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_jungle_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_jungle_mountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_jungle_mountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_jungle_mountains" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_jungle_mountains.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_jungle_wetlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_jungle_wetlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_jungle_wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_jungle_wood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_lava" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_lava.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_marsh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_marsh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mixed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mixed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mixed_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mixed_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mixed_wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mixed_wood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_moss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_moss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mountain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mountain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mountains" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mountains.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mountains_snowy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mountains_snowy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mountain_snowy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mountain_snowy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_mud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_mud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_savanna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_savanna.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_shrubland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_shrubland.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_shrubland_hill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_shrubland_hill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_swamo_moor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_swamo_moor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_swamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_swamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_swamp_dense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_swamp_dense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_underdark_brokenlands" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_underdark_brokenlands.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_underdark_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_underdark_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_underdark_solidrock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_underdark_solidrock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_volcano_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_volcano_active.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_volcano_dormant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_volcano_dormant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_water_ocean" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_water_ocean.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_water_reef" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_water_reef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_water_river" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_water_river.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_water_sea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_water_sea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="terrain_water_shoal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\terrain_water_shoal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="openworld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\openworld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hexo_181" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hexo_181.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="poi_battle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_battle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_bridge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_bridge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_camp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_camp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_castle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_town.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_cave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_cave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_crossbones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_crossbones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_fish" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_fish.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_fleet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_fleet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_gold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_gold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_henge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_henge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_idol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_idol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_keep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_keep.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_lair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_lair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_mine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_mine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_oasis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_oasis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_obelisk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_obelisk.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_palace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_citadel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_port" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_port.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_pyramid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_pyramid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_shipwreck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_graveyard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_shrine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_shrine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_temple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_temple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_tents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_tents.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_tombstone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_tombstone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_tower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_tower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_town_ruins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_town_ruins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_village" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_village.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_village_ruins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_village_ruins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_warcamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_warcamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poi_windmill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poi_windmill.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

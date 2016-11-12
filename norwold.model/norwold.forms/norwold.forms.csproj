@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C121DE9-EC70-48ED-8E08-AA9B2B477F49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>norwold.forms</RootNamespace>
+    <AssemblyName>norwold.forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Brandy.Grapes">
+      <HintPath>..\packages\Brandy.Grapes.1.0.4\lib\net40\Brandy.Grapes.dll</HintPath>
+    </Reference>
+    <Reference Include="Brandy.Grapes.FluentNHibernate">
+      <HintPath>..\packages\Brandy.Grapes.FluentNHibernate.1.1.0\lib\net40\Brandy.Grapes.FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Brandy.Grapes.NHibernate">
+      <HintPath>..\packages\Brandy.Grapes.NHibernate.1.1.0\lib\net40\Brandy.Grapes.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.6.8.0\lib\net35-client\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.2.0.1.0\lib\net40\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextSharp, Version=4.1.6.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\iTextSharp-LGPL.4.1.6\lib\iTextSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.4.0.2.4000\lib\net40\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="base-classes\openwTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="base-classes\openwTreeView.Designer.cs">
+      <DependentUpon>openwTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMapDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMapDesigner.Designer.cs">
+      <DependentUpon>FrmMapDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDevelopment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDevelopment.Designer.cs">
+      <DependentUpon>FrmDevelopment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportViewer.Designer.cs">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCampDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCampDesigner.Designer.cs">
+      <DependentUpon>frmCampDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectsysDataType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectsysDataType.Designer.cs">
+      <DependentUpon>FrmSelectsysDataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdventureDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdventureDetail.Designer.cs">
+      <DependentUpon>frmAdventureDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCampaign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCampaign.Designer.cs">
+      <DependentUpon>frmCampaign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogon.Designer.cs">
+      <DependentUpon>FrmLogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectPlayers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectPlayers.designer.cs">
+      <DependentUpon>frmSelectPlayers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectTree.Designer.cs">
+      <DependentUpon>frmSelectTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRuleSetDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRuleSetDesigner.Designer.cs">
+      <DependentUpon>frmRuleSetDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCharacters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCharacters.Designer.cs">
+      <DependentUpon>frmCharacters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserManager.Designer.cs">
+      <DependentUpon>frmUserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nwBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_nwBase.designer.cs">
+      <DependentUpon>frm_nwBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysDocuments.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sysTreeManager.cs" />
+    <EmbeddedResource Include="FrmMapDesigner.resx">
+      <DependentUpon>FrmMapDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevelopment.resx">
+      <DependentUpon>FrmDevelopment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportViewer.resx">
+      <DependentUpon>frmReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectsysDataType.resx">
+      <DependentUpon>FrmSelectsysDataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdventureDetail.resx">
+      <DependentUpon>frmAdventureDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCampaign.resx">
+      <DependentUpon>frmCampaign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogon.resx">
+      <DependentUpon>FrmLogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectPlayers.resx">
+      <DependentUpon>frmSelectPlayers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectTree.resx">
+      <DependentUpon>frmSelectTree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRuleSetDesigner.resx">
+      <DependentUpon>frmRuleSetDesigner.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCharacters.resx">
+      <DependentUpon>frmCharacters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserManager.resx">
+      <DependentUpon>frmUserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCampDesigner.resx">
+      <DependentUpon>frmCampDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nwBase.resx">
+      <DependentUpon>frm_nwBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printing\Adventure Summary.rdlc" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sysDocuments.resx">
+      <DependentUpon>sysDocuments.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DataModel.libhosting.hostCampaign.datasource" />
+    <None Include="Properties\DataSources\DataModel.libHosting.hostCampaign1.datasource" />
+    <None Include="Properties\DataSources\DataModel.libHosting.hostDevelopment.datasource" />
+    <None Include="Properties\DataSources\DataModel.libhosting.hostUser.datasource" />
+    <None Include="Properties\DataSources\DataModel.libHosting.hostUserEvent.datasource" />
+    <None Include="Properties\DataSources\DataModel.libhosting.hostUserType.datasource" />
+    <None Include="Properties\DataSources\DataModel.libHosting.hostUserType1.datasource" />
+    <None Include="Properties\DataSources\DataModel.libMapping.mapTreeTerrain.datasource" />
+    <None Include="Properties\DataSources\DataModel.libMapping.sysPOIType.datasource" />
+    <None Include="Properties\DataSources\DataModel.libMapping.sysTerrainTypeBase.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwAdventure.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwChar.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwCharCampaign.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwCharStat.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwFaction.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwHex.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwItem.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwMilestone.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwTreeFaction.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwTreeLocation.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwTreeMilestone.datasource" />
+    <None Include="Properties\DataSources\norwold.model.nwXPGained.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysAlignment.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysAOEType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysDamageRoll.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysDamageType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysDevelopment.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysDevelopmentType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysDurationType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysFactionRanking.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysItemType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysLanguage.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysMilestone.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysMilestoneType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysStatistic.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysStatisticGroup.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysStatisticStackingType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysTerrainType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysTree.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysTreeDevelopment.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysTreeItemType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysTreeMilestoneType.datasource" />
+    <None Include="Properties\DataSources\norwold.model.sysTreeStatistic.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataModel\norwold.model.csproj">
+      <Project>{45625212-5bad-49fe-b2f4-f1bb071ff5d9}</Project>
+      <Name>norwold.model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\demons-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="interfaces\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
