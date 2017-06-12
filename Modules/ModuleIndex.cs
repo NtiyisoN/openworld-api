@@ -9,6 +9,10 @@
             Get["/"] = parameters => {
                 return View["index"];
             };
+            Get["/authentication/authenticatecallback?providerkey=facebook"] = paramaters =>
+            {
+                return View["owUser"];
+            };
         }
     }
 }

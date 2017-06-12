@@ -72,7 +72,7 @@ namespace  DataModel.libDB
             if (this.bCloud) {
                 details = new dbConnDetails("openworld","nwlogin","However182$","o714tvghlu.database.windows.net");
             } else {
-                details = new dbConnDetails("openworld","nwlogin","nwlogin","STEVE-PC\\SQLEXPRESS");
+                details = new dbConnDetails("openworld","nwlogin","nwlogin",".\\SQLEXPRESS");
             }
         }
 

@@ -1,7 +1,8 @@
 ﻿//directive if defined will force Create DB
 //#define EXPLODEDB
-//directive if defined will seed Data (only if createDB defined as well)
 //#define SEED_DATA
+//directive if defined will seed Data (only if createDB defined as well)
+
 
 
 

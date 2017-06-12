@@ -12,7 +12,7 @@ using DataModel.libDB;
 
 namespace DataModel.libHosting
 {
-    public class sysFacebook
+    public class hostFacebook
     {
         public virtual string ID { get; set; }
         public virtual string Gender { get; set; }
@@ -25,7 +25,7 @@ namespace DataModel.libHosting
 
         protected FacebookClient fb;
 
-        public sysFacebook()
+        public hostFacebook()
         {
             
         }
@@ -90,10 +90,10 @@ namespace DataModel.libHosting
 
 
         //STATIC Methods
-        public static sysFacebook ParseResponse(IDictionary<string, object> response, FacebookOAuthResult authResult) 
+        public static hostFacebook ParseResponse(IDictionary<string, object> response, FacebookOAuthResult authResult) 
         {
             if (!authResult.IsSuccess) { return null; }
-            sysFacebook result = new sysFacebook();
+            hostFacebook result = new hostFacebook();
             result.Verified = (bool)response["verified"];
             result.AccessToken = authResult.AccessToken;
             result.FirstName= (string)response["first_name"];
@@ -126,11 +126,18 @@ namespace DataModel.libHosting
             
         }
 
-        public static hostUser UserExists(ISession sess,sysFacebook fbRecord)
+        public static hostUser UserExists(ISession sess,hostFacebook fbRecord)
         {
             return sess.QueryOver<hostUser>().Where(x => x.fbID == fbRecord.ID).SingleOrDefault();
 
         }
+
+        public static hostUser UserExistsStr(ISession sess, string fbID)
+        {
+            return sess.QueryOver<hostUser>().Where(x => x.fbID == fbID).SingleOrDefault();
+
+        }
+
 
         public static hostUser FindByUserName(ISession sess, string user)
         {

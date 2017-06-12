@@ -37,7 +37,7 @@ namespace DataModel.libHosting
 
         }
 
-        public hostUser(string n, string nl, sysFacebook fbRecord)
+        public hostUser(string n, string nl, hostFacebook fbRecord)
             : this(n, nl)
         {
             this.linkFaceBook(fbRecord);
@@ -63,7 +63,7 @@ namespace DataModel.libHosting
 
         
 
-        public virtual void linkFaceBook(sysFacebook fbRecord) {
+        public virtual void linkFaceBook(hostFacebook fbRecord) {
             this.fbID =fbRecord.ID;
             this.fbGender = fbRecord.Gender;
             this.fbAccessToken = fbRecord.AccessToken;
